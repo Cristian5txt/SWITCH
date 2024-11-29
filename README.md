@@ -7,11 +7,10 @@ int main()
 char dia;
 char seguir;
 char Y;
-char N;
+do{
 cout<< "INGRESE EL DIA DE LA SEMANA"<<endl;
 cin>>dia;
 
-do{
 switch (dia){
 case 'L' :
 cout<< "ACCIONES DEL LUNES SON: "<<endl;
@@ -54,10 +53,11 @@ cout<< "ESTUDIAR Y REALIZAR DEBERES"<<endl;
 
 break;
     }
-cout<< "DESEA ESCOGER OTRO DIA "<<endl;
-cout<< " Y ES SI"<<endl;
-cout<< "N ES NO"<<endl;
-cin
-    }while (seguir==Y);
+    cout<< "SEGUIR O NO"<<endl;
+    cout<< "Y=SI"<<endl;
+    cout<< "N=NO"<<endl;
+    cin>>seguir;
+    }while (seguir== 'Y');
     return 0;
 }
+
